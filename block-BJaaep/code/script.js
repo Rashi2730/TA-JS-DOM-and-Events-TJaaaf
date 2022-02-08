@@ -1,17 +1,28 @@
-let numbers = [1,2,3,4,5,6,7,8,9,10,11,12];
+
+
+let first = document.querySelectorAll(".without li");
+
+
+first.forEach((box, index) => {
+    box.addEventListener(`click`, (eve) => { 
+        eve.target.innerText = index + 1;
+
+        setTimeout(() => {
+            eve.target.innerText = "";
+        }, 5000);
+    });
+});
 
 
 
-let root = document.querySelector(".boxes");
 
-numbers.forEach((num) => {
-    let div = document.createElement("div");
-    div.classList.add("box");
-    
+let second = document.querySelectorAll(".with");
 
-    div.addEventListener("click", function(){
-        div.innerText = num;
-    })
-    root.append(div);
+second.addEventListener(`click`, (eve)=> {
+   let num = eve.target.dataset.text; 
+   eve.target.innerText = num;
 
-})
+   setTimeout(() => {
+       eve.target.innerText = "";
+   }, 5000);
+});
