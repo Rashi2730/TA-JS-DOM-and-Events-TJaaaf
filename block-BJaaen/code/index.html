@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper and Scissors</title>
+    <script src="https://kit.fontawesome.com/6f7e89d699.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Quintessential&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="game_container">
+      <div class="heading">
+        <h1>Rock Paper Scissors</h1>
+      </div>
+      <h2> You - <span id="yourScore">0</span>
+        <span id="yourChoice">-- Choice</span>
+      </h2>
+      <div class="your_container" id="player">
+        <i class="fa fa-hand-rock-o" aria-hidden="true"></i>
+        <i class="fa fa-hand-paper-o" aria-hidden="true"></i>
+        <i class="fa fa-hand-scissors-o" aria-hidden="true"></i>   
+      </div>
+      <h2> Computer - <span id="compScore">0</span>
+        <span id="compChoice">-- Choice</span>
+      </h2>
+      <div class="comp_container" id="computer">
+        <i class="fa fa-hand-rock-o" aria-hidden="true"></i>
+        <i class="fa fa-hand-paper-o" aria-hidden="true"></i>
+        <i class="fa fa-hand-scissors-o" aria-hidden="true"></i>   
+      </div>
+      <i id="reset" class="fa fa-rotate-left" aria-hidden="true"></i>  
+      <div class="result_cont">
+        <h3 id="result">You Won!</h3>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
