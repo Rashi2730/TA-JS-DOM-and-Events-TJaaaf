@@ -42,3 +42,4 @@ function info(data = {}){
 
     display.append(names, email, movie, genre, rating, message, btn );
 }
+
