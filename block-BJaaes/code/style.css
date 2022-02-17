@@ -35,3 +35,56 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+
+form {
+  margin: 3rem 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  
+}
+
+.form-control {
+  margin: 0.5rem 0;
+}
+input {
+  margin: 0.50rem 0;
+  padding: 0.25rem  2rem 0.25rem 0.25rem;
+  position: relative;
+}
+input::placeholder {
+  position: absolute;
+  top: 3px;
+  left: 5px;
+}
+
+button {
+  padding: 0.25rem 5.75rem;
+  margin: 0.50rem 0;
+  background-color: aquamarine;
+  color: black;
+  font-size: 1rem;
+  border: 1px black solid;
+}
+
+.success {
+  border: 2px green solid;
+}
+
+.fail {
+    border: 2px rgb(224, 19, 19) solid;
+}
+
+small {
+  font-size: 0.90rem;
+  font-weight: 900;
+}
