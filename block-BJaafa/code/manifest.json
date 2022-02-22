@@ -1,0 +1,10 @@
+{
+    "name" : "Dark Mode" ,
+    "description" : "Add a dark mode background",
+    "version" : "1.0.0",
+    "manifest_version" : 2,
+     "content_scripts" : [{
+        "matches" : ["https://www.google.com/*"],
+        "css" : ["style.css"]
+    }]
+}
